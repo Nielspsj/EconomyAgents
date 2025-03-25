@@ -9,18 +9,13 @@ public class Crafting : MonoBehaviour
 
     [SerializeField] private Pickup2D pickup2D;
     [SerializeField] private List<string> blueprint = new List<string>();
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject hammerPref;
 
-    // Update is called once per frame
-    void Update()
+   
+    private void Blueprint_Hammer()
     {
-        
-    }
 
+    }
     
     public void CraftHammer()
     {
@@ -28,7 +23,10 @@ public class Crafting : MonoBehaviour
         {
             Debug.Log("We can craft!");
             //Spawn hammer
+            GameObject hammer = Instantiate(hammerPref) as GameObject;
             //Clear the inventory items
+            pickup2D.inventoryList.Remove("Iron");
+            pickup2D.inventoryList.Remove("Log");
         }
 
         /*

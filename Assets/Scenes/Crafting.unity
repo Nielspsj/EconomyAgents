@@ -686,7 +686,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickup2D: {fileID: 122140460}
-  blueprint: []
+  blueprint:
+  - Iron
+  - Log
+  hammerPref: {fileID: 1816855726878977120, guid: 9ce2af089692d1b418d26c6605778dd8, type: 3}
 --- !u!4 &497639219
 Transform:
   m_ObjectHideFlags: 0
